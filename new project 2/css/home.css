@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* -----------------------navbarr------------------ */
+.navbar {
+    position: fixed;
+    margin-top: -70px;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-main {
+    border: 2px solid #2B2D3A;
+    height: 50px;
+
+    margin: 5px 10px;
+    border-radius: 25px;
+    background-color:#2B2D3A;
+    display: flex;
+}
+
+.nav-main p {
+    color: white;
+    margin: 5px 20px;
+    font-size: 2rem;
+    font-style: bolder;
+
+}
+
+#search-box {
+    background-color: white;
+    display: flex;
+    height: 30px;
+    width: 600px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 300px;
+}
+
+#nav-search-icon {
+
+    color: #2B2D3A;
+    margin-top: 7px;
+    font-size: 1.1rem;
+    font-style: bolder;
+    margin-left: 20px;
+}
+
+#search-input {
+    background-color: white;
+    height: 25px;
+    width: 510px;
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-top: 5px;
+    margin-left: 0px;
+    border: none;
+
+}
+
+#search-input::placeholder {
+    color: #2B2D3A;
+
+    font-style: bolder;
+    font-size: 1.1rem;
+}
+
+#search-input:active,
+#search-input:focus {
+    outline: none;
+    height: 20px;
+    font-size: 1.1rem;
+    margin-top: 0px;
+}
+
+#more-box {
+    background-color: white;
+    height: 30px;
+    width: 150px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#more-box p {
+    color: #2B2D3A;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-left: 55px;
+
+}
+
+#more-box button {
+    color: #2B2D3A;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    margin-right: 25px;
+    right: 140px;
+    top: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    border-radius: 10px;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #fff;
+    z-index: 10;
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.tooltip {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+#profile {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+#user-icon-nav{
+    color:#2B2D3A ;
+    height: 30px;
+    width: 30px;
+    margin-top: 3px;
+    border-radius: 25px;
+    
+}
+
+
+#logo img{
+    /* background-color: ; */
+    height: 30px;
+    width: 30px;
+    /* border-radius: 25px; */
+    margin-top: 9px;
+    margin-left: 85px; 
+}
+
+
+/* ------------------------options----------------------- */
+
+.options {
+    /* border: 2px solid black; */
+    height: 200px;
+    margin-top: 70px;
+    z-index: 0;
+
+}
+
+.option1 {
+    display: flex;
+    z-index: -2;
+}
+
+.location {
+    display: flex;
+    position: relative;
+    background-color: #2B2D3A;
+    border: 2px solid #2B2D3A;
+    height: 40px;
+    width: 450px;
+    left: 140px;
+    border-radius: 25px;
+    top: 40px;
+
+
+}
+
+.location input {
+    height: 40px;
+    border-radius: 25px;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    width: 350px;
+    border: none;
+    /* color: white; */
+    background-color: #2B2D3A;
+}
+
+.location input:focus {
+    outline: none;
+    color: white;
+}
+
+.location input::placeholder {
+
+    color: white;
+}
+
+#location-icon {
+    color: white;
+    margin-top: 6px;
+    margin-left: 40px;
+    font-size: 1.7rem;
+}
+
+
+.price {
+    display: flex;
+    position: relative;
+    background-color: #2B2D3A;
+    border: 2px solid #2B2D3A;
+    height: 40px;
+    width: 450px;
+    left: 500px;
+    border-radius: 25px;
+    top: 40px;
+    z-index: 0;
+
+
+}
+
+.price p{
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.price input:focus {
+    outline: none;
+    color: white;
+}
+
+.price input::placeholder {
+
+    color: white;
+}
+
+.price-slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.price-slider {
+    width: 280px;
+    margin: 0 20px;
+}
+
+.price-display-container {
+    width: 70px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-display {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#price-icon {
+    color: white;
+    margin-top: 6px;
+    margin-left: 40px;
+    font-size: 1.7rem;
+}
+
+
+.filter {
+    display: flex;
+    position: relative;
+    background-color: #2B2D3A;
+    border: 2px solid #2B2D3A;
+    height: 40px;
+    width: 260px;
+    left: 1125px;
+    border-radius: 25px;
+    top: 70px;
+    z-index: -1;
+
+
+}
+
+.filter input {
+    height: 40px;
+    border-radius: 25px;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    width: 150px;
+    border: none;
+    /* color: white; */
+    background-color: #2B2D3A;
+}
+
+.filter input:focus {
+    outline: none;
+    color: white;
+}
+
+.filter input::placeholder {
+
+    color: white;
+}
+
+#filter-icon {
+    color: white;
+    margin-top: 6px;
+    margin-left: 40px;
+    font-size: 1.7rem;
+}
+
+
+/* --------------posts------------- */
+
+.posts{
+    border: 4px solid #2B2D3A;
+    height: 800px;
+    border-radius: 25px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.posts{
+    display: flex;
+}
+.posts div{
+    margin-left: 80px;
+    margin-top: 40px;
+    width: 320px;
+    height: 300px;
+    border-radius: 25px;
+    border: 2px solid #2B2D3A;
+}
+.posts img{
+    width: 320px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    height: 200px;
+}
+.posts h1{
+    margin-top: 10px;
+    margin-left: 30px;
+    display: inline-block;
+}
+.posts p{
+  display: inline-block;
+  width: 100px;
+  margin-left: 20px;
+}

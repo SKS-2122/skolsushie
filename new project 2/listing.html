@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="/css/listing.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-main">
+            <div id="logo"><a href="/index.html"><img src="/resources/flatsharelogo.png" alt=""></a></div>
+            <p>flatShare</p>
+
+
+            <div id="profile"><a href="/login.html"><ion-icon id="user-icon-nav" name="person"></ion-icon></a></div>
+        </div>
+
+        </div>
+    </header>
+    <section>
+        <form action="">
+            <div class="box-1 ">
+                <div id="upper-options">
+                    <a href="/login.html"><button type="button"><ion-icon id="icon-back" name="chevron-back-outline"></ion-icon></button></a>
+                    <p>Listing Product</p>
+                    <a href="/index.html"><ion-icon id="simple-icon" name="home"></ion-icon></a>
+                </div>
+
+                <div id="inner-box">
+                    <div id="content-box1">
+                        <div id="name-user"><span>Welcome, <br></span>Sarbjeet</div>
+                        <div id="img-box1"><img src="/resources/Screenshot 2023-04-08 143949.png" alt=""></div>
+                        <div id="info-box1">Let's set up your listing <br><span>List your properties with simple
+                                steps</span></div>
+                    </div>
+                    <button id="next-box" type="button">Add New Listing </button>
+                </div>
+
+            </div>
+            <div class="box-2 hidden">
+                <div id="upper-options-2">
+                    <button type="button"><ion-icon id="icon-back-2" name="chevron-back-outline"></ion-icon></button>
+                    <p>Step-1</p>
+                    <a href="/index.html"><ion-icon id="simple-icon-2" name="close"></ion-icon></a>
+                </div>
+                <div id="inputsbox2">
+                    <div id="location">
+                        <h2>Location</h2>
+                        <br><input type="text" placeholder="Location">
+                    </div>
+                    <div id="availability">
+                        <h2>Availability</h2>
+                        <br>
+                        <div id="btns-availability"><button type="button">Yesterday</button>
+                            <button type="button">Within 15 Days</button>
+                            <button type="button">Last 3 Days</button>
+                        </div>
+                    </div>
+                    <div id="property-type">
+                        <h2>Property Type</h2>
+                        <div class="optionss">
+                            <label class="container">1 BHK
+                                <input type="radio" name="property-type" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="container">2 BHK
+                                <input type="radio" name="property-type">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="container">3 BHK
+                                <input type="radio" name="property-type">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+                <button id="next-box-2" type="button">Next</button>
+            </div>
+            <div class="box-3 hidden">
+                <div id="upper-options-3">
+                    <button type="button"><ion-icon id="icon-back-3" name="chevron-back-outline"></ion-icon></button>
+                    <p>Step-2</p>
+                    <a href="/index.html"><ion-icon id="simple-icon-3" name="close"></ion-icon></a>
+                </div>
+                <div id="no_roomates">
+                    <h2>Number of Roomates</h2>
+                    <br>
+                    <div class="optionss">
+                        <label class="container" style="color:white">1
+                            <input type="radio" name="a" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="container" style="color:white">2
+                            <input type="radio" name="a">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="container" style="color:white">3+
+                            <input type="radio" name="a">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div id="no_people_staying">
+                    <h2>Number of people staying</h2>
+                    <div class="optionss">
+                        <label class="container" style="color:white">1
+                            <input type="radio" name="no_people_staying" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="container" style="color:white">2
+                            <input type="radio" name="no_people_staying">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="container" style="color:white">3+
+                            <input type="radio" name="no_people_staying">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <h2 id="label-uplode">Uplode Photos</h2>
+                    <div class="upload-box">
+                        <input type="file" id="file-input" multiple>
+
+                        <label for="file-input" id="label-fileinput" class="">Select images to upload</label>
+                        <div class="preview-images">
+                            <!-- Images will be added dynamically via JavaScript -->
+                        </div>
+                    </div>
+                    <a href="/index.html"><button type="button" id="next-box-3">Next</button></a>
+
+
+
+
+                </div>
+
+
+
+            </div>
+        </form>
+
+    </section>
+    <script src="/js/listing.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    /* position: fixed; */
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-main {
+    border: 2px solid #2B2D3A;
+    height: 50px;
+
+    margin: 5px 10px;
+    border-radius: 25px;
+    background-color:#2B2D3A;
+    display: flex;
+}
+
+.nav-main p {
+    color: white;
+    margin: 5px 20px;
+    font-size: 2rem;
+    font-style: bolder;
+
+}
+
+
+.tooltip {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+#profile {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 1150px;
+}
+#user-icon-nav{
+    color:#2B2D3A ;
+    height: 30px;
+    width: 30px;
+    margin-top: 3px;
+    border-radius: 25px;
+    
+}
+
+
+#logo img{
+    
+    height: 30px;
+    width: 30px;
+    /* border-radius: 25px; */
+    margin-top: 9px;
+    margin-left: 85px; 
+}
+
+.container{
+    border: 2px solid #2B2D3A;
+    height: 600px;
+    background-color: #2B2D3A;
+    width: 800px;
+    border-radius: 25px;
+    
+    margin: 40px auto;
+}
+#inner-box{
+    border: 2px solid rgb(255, 255, 255);
+    height: 450px;
+    background-color: white;
+    border-radius: 25px;
+    margin:30px 20px;
+}
+#inner-box h2{
+  margin: 30px 40px;
+  font-size: 1.9rem;
+}
+#circle{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid  #2B2D3A;
+    margin: 0 50px;
+    display: inline-block;
+}
+#circle img{
+    border-radius: 50%;
+    width: 250px;
+}
+#login{
+    /* border: 2px solid black; */
+    display: inline-block;
+    /* height: 270px; */
+    width: 100px;
+}
+#login input{
+    color: white;
+    position: relative;
+    top: -40px;
+    width: 300px;
+    height: 40px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    padding-left: 20px;
+    background-color: #2B2D3A;
+    
+}
+#login input::placeholder{
+    color: white;
+    font-weight: bold;
+}
+#login input:focus{
+    color: white;
+}
+.container_2 button{
+    width: 400px;
+    height: 40px;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 10px 200px;
+}
